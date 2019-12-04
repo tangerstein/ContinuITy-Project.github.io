@@ -34,6 +34,9 @@
 								<a href="index.html" class="currentlink">Home</a>
 							</li>
 							<li>
+								<a href="downloads.html"">Downloads</a>
+							</li>
+							<li>
 								<a href="publications.html">Publications</a>
 							</li>
 							<li>
@@ -52,9 +55,37 @@
 					<h3>
 					<a id="aboutProject" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>ContinuITy Research Project</h3>
 				
-				<p><a href="http://www.novatec-gmbh.de/">NovaTec Consulting GmbH</a> and the <a href="http://uni-stuttgart.de/">University of Stuttgart</a> (<a href="http://www.iste.uni-stuttgart.de/rss/">Reliable Software Systems Group</a>) launched the collaborative research project ContinuITy on “Automated Performance Testing in Continuous Software Engineering”. ContinuITy started in September 2017 with a duration of two years. It is funded by the <a href="http://www.bmbf.de/">German Federal Ministry of Education and Research (BMBF)</a>. </p>
+					<p>
+						To create responsive and cost-effective application systems, performance regressions must be detected early in the software development process and especially before delivery. However, practice shows that load tests, as the relevant form of performance tests, either do not exist or are performed in poor quality &mdash; i.e. they are not representative of the actual usage profile in productive operation. This is due to the effort and competence required to create the load test scripts. In addition, the scripts quickly become obsolete due to system and usage profile changes and their maintenance is associated with a high effort. The problem is aggravated in the context of the emerging continuous software development (DevOps), in which software changes are put into operation ever faster and more frequently. Due to the required test duration, it is not practicable to perform a load test for each change in order to detect performance regressions, for example. If regressions are performed via aggregated changes, a manual diagnosis is necessary to determine the responsible change in the software or the usage profile. 
+					</p>
+
+					<p>
+						Therefore, <a href="http://www.novatec-gmbh.de/">Novatec Consulting GmbH</a> and the <a href="http://uni-stuttgart.de/">University of Stuttgart</a> (<a href="http://www.iste.uni-stuttgart.de/rss/">Reliable Software Systems Group</a>) launched the collaborative research project ContinuITy on “Automated Performance Testing in Continuous Software Engineering”. It has the goal to ensure automated, efficient and sustainable load testing by using continuously recorded measurement data from productive operation and to integrate it into continuous software development. Load tests are automatically extracted from measurement data and evolved. Load tests are defined by a modular description language and can be enriched by additional semantics &mdash; e.g. by test type and targets. As part of the automation of the software development process (Continuous Delivery), a selection of relevant load tests, the detection of regressions and their diagnosis is carried out.
+					</p>
+
+					<p>
+						ContinuITy started in September 2017 with a duration of two and a half years, funded by the <a href="http://www.bmbf.de/">German Federal Ministry of Education and Research (BMBF)</a>. Novatec Consulting GmbH and the Reliable Software Systems Group possess comprehensive experience in APM and performance engineering of enterprise software systems from industry and academia. The ContinuITy approach is being evaluated in qualitative and quantitative studies, including laboratory experiments and enterprise software systems used in industry, which are provided by our associated partners. These are a German company from the logistics sector operating a cloud-based IoT platform and a software management company.
+					</p>
+
+					<h3><a id="framework" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>ContinuITy Framework</h3>
+
+					<p>
+						ContinuITy provides a web-based framework for collecting productive measurement data continuously and generating load tests efficiently. It defines a RESTful API for uploading the data and submitting orders for extracting, parameterizing, and executing load tests. The API can be both accessed by users and software such as Continuous Integration and Delivery pipelines. Besides, ContinuITy provides means for creating load tests and analyses based on a user concern formulated in a natural-like language.
+					</p>
+
+					<p>
+						The framework provides a high degree of automation. Creating load tests or analyses does not require expert knowledge. Instead, users can describe their concerns in easily understandable languages, and the framework takes care of generating the tests or reports automatically. For that, it leverages different approaches for workload analysis, clustering, forecasting, and transformation.
+					</p>
+
+					<p>
+						ContinuITy integrates with various tools, approaches, and formats on all sides. It can process numerous measurement data formats such as Apache logs or traces in a tool-independent format, which integrates with commercial and open-source monitoring and APM tools. At the same time, it can create load tests for different load testing tools. Hence, it adjusts to already existing infrastructure.
+					</p>
+
+					<p>
+						ContinuITy can be easily set up using the provided Docker images as a standalone application. As soon as the application to be load-tested sends productive monitoring data in an accepted format, and ContinuITy was able to learn the end-users' behavior, it is ready to generate load tests.
+					</p>
 				
-					</section>        
+				</section>        
 				
 				
 				<aside id="sidebar">
@@ -64,7 +95,7 @@
 					<h3>
 					<a id="consortium" class="anchor" href="#consortium" aria-hidden="true"><span class="octicon octicon-link"></span></a>Consortium</h3>
 					<br />
-					<a href="http://www.novatec-gmbh.de/"><img src="images/RTEmagicC_novatec-200x33.png.png" alt="NovaTec Consulting GmbH" title="NovaTec Consulting GmbH" width="70%" height="70%" /></a>
+					<a href="http://www.novatec-gmbh.de/"><img src="images/logo-novatec.png" alt="NovaTec Consulting GmbH" title="NovaTec Consulting GmbH" width="70%" height="70%" /></a>
 					<br /><br /><br />
 					<a href="http://www.uni-stuttgart.de/"><img src="images/logo-ustuttgart-140x29.png" alt="Universität Stuttgart" title="Universität Stuttgart" width="140" height="29" /></a>
 					<br /><br /><br />
